@@ -1,55 +1,48 @@
 import { useEffect } from "react";
+import Lenis from "lenis";
 import "@/App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import axios from "axios";
-import { HOME } from "@/constants/testIds";
+import { Toaster } from "./components/ui/sonner";
+import { Header } from "./components/site/Header";
+import { Hero } from "./components/site/Hero";
+import { Marquee } from "./components/site/Marquee";
+import { About } from "./components/site/About";
+import { Benefits } from "./components/site/Benefits";
+import { Services } from "./components/site/Services";
+import { Results } from "./components/site/Results";
+import { Process } from "./components/site/Process";
+import { Contact } from "./components/site/Contact";
+import { Footer } from "./components/site/Footer";
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
-
-const Home = () => {
-  const helloWorldApi = async () => {
-    try {
-      const response = await axios.get(`${API}/`);
-      console.log(response.data.message);
-    } catch (e) {
-      console.error(e, `errored out requesting / api`);
-    }
-  };
-
+const useLenis = () => {
   useEffect(() => {
-    helloWorldApi();
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return undefined;
+    const lenis = new Lenis({ duration: 1.15, smoothWheel: true });
+    window.__lenis = lenis;
+    let id;
+    const raf = (t) => { lenis.raf(t); id = requestAnimationFrame(raf); };
+    id = requestAnimationFrame(raf);
+    return () => { cancelAnimationFrame(id); lenis.destroy(); window.__lenis = null; };
   }, []);
-
-  return (
-    // The marker attribute below lets the platform probe detect the stock splash — remove it with this page
-    <div data-emergent-splash>
-      <header className="App-header">
-        <a
-          data-testid={HOME.emergentLink}
-          className="App-link"
-          href="https://emergent.sh"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="https://avatars.githubusercontent.com/in/1201222?s=120&u=2686cf91179bbafbc7a71bfbc43004cf9ae1acea&v=4" />
-        </a>
-        <p className="mt-5">Building something incredible ~!</p>
-      </header>
-    </div>
-  );
 };
 
 function App() {
+  useLenis();
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />}>
-            <Route index element={<Home />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+    <div className="App grain">
+      <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[60] focus:bg-neon focus:text-ink focus:px-4 focus:py-2 focus:rounded-full">Перейти к содержимому</a>
+      <Header />
+      <main id="main">
+        <Hero />
+        <Marquee />
+        <About />
+        <Benefits />
+        <Services />
+        <Results />
+        <Process />
+        <Contact />
+      </main>
+      <Footer />
+      <Toaster theme="dark" position="bottom-center" />
     </div>
   );
 }

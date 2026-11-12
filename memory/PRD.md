@@ -1,0 +1,23 @@
+# PRD — Sofi Rzaeva landing page
+
+## Original problem statement
+Create a premium, responsive Russian-language one-page website for Sofi Rzaeva, a Moscow-based fitness mentor for women aged 25–60, including office workers and beginners. Her positioning is helping women pursue sustainable weight loss, reduce cycles of setbacks, and build confidence; present this as her stated approach, not a guaranteed outcome. Use a dark, minimalist, energetic visual direction with restrained neon accents, bold typography, generous spacing, subtle scroll-reveal motion, hover states, a fixed navigation header, and a prominent booking CTA. Include a hero, about and coaching approach, benefits, service cards with prices left as editable placeholders, a client results and portfolio gallery with clearly marked image/case placeholders rather than invented transformations or testimonials, a four-step work process, contact section with an inquiry form, and footer. Add clickable Instagram and Telegram links using the supplied public profile URLs, plus editable contact fields; do not fabricate credentials, client results, pricing, biography, or testimonials. Include accessible semantic structure, mobile-first layouts, optimized image placeholders with alt text, and basic SEO metadata. The main CTA should invite visitors to contact Sofi via Telegram.
+
+User answers: Telegram https://t.me/sofi_rzaevaa, Instagram https://www.instagram.com/sofi.rzaeva?rpxt=ZDRheGV1OG9xaXEz; form only opens Telegram with prefilled text; Sofi's photo will be sent later.
+
+## Architecture
+Frontend-only React (CRA/craco) + Tailwind + framer-motion + lenis. No backend usage.
+- Editable content: /app/frontend/src/data/content.js (links, contacts, services/prices, cases, steps)
+- Sections: /app/frontend/src/components/site/*
+- Images: /app/frontend/public/img (Unsplash, stored locally), favicon.svg = logo mark
+
+## Implemented (2026-11-12)
+- Fixed glass header + mobile menu, Lenis smooth scroll
+- Hero: masked line reveal, 3D tilt + parallax portrait placeholder, rotating badge, Telegram CTA with prefilled text
+- Slow editorial marquee, About/approach, bento benefits, 3 service cards ([цена] placeholders), 6 case placeholders (до/после), 4-step process with scroll progress line, contact (Telegram/Instagram + editable phone/email/hours), form → opens Telegram with prefilled message + copies text, footer with disclaimer
+- SEO: lang=ru, title, description, OG tags, SVG favicon
+
+## Backlog
+- P0: Replace hero/about photos with Sofi's real photos; fill prices, bio, contacts
+- P1: Real client cases (with consent), FAQ section
+- P2: Analytics, OG preview image, Yandex.Metrica

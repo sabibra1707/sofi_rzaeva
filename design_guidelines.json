@@ -1,0 +1,206 @@
+{
+  "project_overview": {
+    "title": "Sofi Rzaeva — Female Fitness Mentor Landing Page",
+    "target_audience": "Women aged 25–60 in Moscow, including busy office workers, beginners, and women seeking sustainable weight loss without extreme cycles or burnout.",
+    "positioning": "Empower women through individual mentoring, science-backed lifestyle habits, sustainable strength, and emotional confidence. Presented strictly as a stated philosophy & structured mentorship, not a guaranteed magic transformation.",
+    "language": "Russian (ru-RU)"
+  },
+  "visual_identity": {
+    "archetype": "Performance Pro & Dark Minimalist",
+    "theme": "Dark, high-contrast obsidian base with restrained vibrant lime/cyan neon accents, crisp typography, generous spacing, and subtle kinetic motion.",
+    "vibe": "Awwwards-level luxury athletic studio, editorial & empowering."
+  },
+  "typography": {
+    "font_family_display": "'Barlow Condensed', 'Outfit', sans-serif",
+    "font_family_body": "'Plus Jakarta Sans', 'Inter', system-ui, sans-serif",
+    "hierarchy": {
+      "hero_heading": "text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight uppercase leading-[0.95]",
+      "section_heading": "text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight uppercase leading-none",
+      "card_heading": "text-xl sm:text-2xl font-bold tracking-tight",
+      "body_large": "text-lg sm:text-xl text-neutral-300 leading-relaxed font-normal",
+      "body_regular": "text-base text-neutral-400 leading-relaxed font-normal",
+      "label_accent": "text-xs sm:text-sm font-mono uppercase tracking-[0.25em] text-emerald-400 font-semibold"
+    }
+  },
+  "colors": {
+    "background_main": "#090A0E",
+    "background_surface": "#11131C",
+    "background_card": "rgba(20, 23, 34, 0.75)",
+    "border_subtle": "rgba(255, 255, 255, 0.08)",
+    "border_active": "rgba(0, 255, 157, 0.4)",
+    "primary_neon": "#00FF9D",
+    "primary_neon_glow": "rgba(0, 255, 157, 0.25)",
+    "accent_cyan": "#00E5FF",
+    "text_main": "#FFFFFF",
+    "text_muted": "#94A3B8",
+    "text_subtle": "#64748B"
+  },
+  "spacing_and_layout": {
+    "container_padding": "px-4 sm:px-8 lg:px-16 max-w-7xl mx-auto",
+    "section_spacing": "py-24 sm:py-32 lg:py-40",
+    "card_internal_padding": "p-6 sm:p-10",
+    "grid_gap": "gap-6 sm:gap-8 lg:gap-10"
+  },
+  "motion_and_libraries": {
+    "smooth_scroll": "Lenis smooth scroll integration (@studio-freight/lenis or lenis)",
+    "animation_framework": "framer-motion",
+    "effects": [
+      "Subtle parallax hero background canvas / ambient mesh",
+      "Masked line-by-line text reveal for hero heading",
+      "Slow editorial marquee ribbon with Russian coaching principles",
+      "Glow-border hover state for service and benefit cards",
+      "Scroll-triggered fade and slide-up for content blocks"
+    ]
+  },
+  "social_links_and_contact": {
+    "telegram_channel": "https://t.me/sofi_rzaevaa",
+    "instagram_profile": "https://www.instagram.com/sofi.rzaeva?rpxt=ZDRheGV1OG9xaXEz",
+    "contact_telegram_prefill": "https://t.me/sofi_rzaevaa?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%AF%20%D1%85%D0%BE%D1%82%D0%B5%D0%BB%D0%B0%20%D0%B1%D1%8B%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BF%D0%BE%D0%B4%D1%80%D0%BE%D0%B1%D0%BD%D0%B5%D0%B5%20%D0%BE%20%D1%82%D1%80%D0%B5%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0%D1%85%20%D0%B8%20%D0%BD%D0%B0%D1%81%D1%82%D0%B0%D0%B2%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%B5.",
+    "editable_contact_phone": "+7 (999) 000-00-00",
+    "editable_contact_email": "sofi.rzaeva.fit@example.com",
+    "location": "Москва, Россия / Онлайн по всему миру"
+  },
+  "sections_structure": [
+    {
+      "id": "header",
+      "name": "Fixed Navigation Header",
+      "features": [
+        "Original custom SVG logo with Sofi Rzaeva brand mark",
+        "Desktop links: Обо мне, Подход, Услуги, Результаты, Процесс, Контакты",
+        "Primary CTA: 'Записаться в Telegram' linking directly to Telegram",
+        "Glassmorphism surface with backdrop blur and subtle border"
+      ]
+    },
+    {
+      "id": "hero",
+      "name": "Hero Section",
+      "features": [
+        "Masked line-by-line reveal motion",
+        "Hero tag: 'Осознанный фитнес для женщин • Москва & Онлайн'",
+        "Headline: 'ОСОЗНАННЫЙ ФИТНЕС И СИСТЕМНЫЙ ПОДХОД К ТЕЛУ'",
+        "Subheading: 'Помогаю женщинам обрести уверенность, избавиться от срывов и выстроить устойчивую систему тренировок и питания.'",
+        "Hero portrait frame with clearly marked placeholder for Sofi Rzaeva photo",
+        "Dual CTAs: Primary Telegram booking button + Secondary scroll link to Approach"
+      ]
+    },
+    {
+      "id": "marquee",
+      "name": "Editorial Marquee Ribbon",
+      "features": [
+        "Slow, high-class ticker with key values: СИСТЕМНОСТЬ • БЕЗ СРЫВОВ • БЕРЕЖНО К ЗДОРОВЬЮ • УВЕРЕННОСТЬ • ИНДИВИДУАЛЬНЫЙ РИТМ"
+      ]
+    },
+    {
+      "id": "about",
+      "name": "About Sofi Rzaeva & Coaching Approach",
+      "features": [
+        "Personal introduction and philosophy",
+        "Highlighting individual rhythm, health-first mindset, and no-burnout approach",
+        "Bento layout separating Philosophy, Audience focus (25-60 yrs, office workers, beginners), and Methodology"
+      ]
+    },
+    {
+      "id": "benefits",
+      "name": "Key Benefits",
+      "features": [
+        "4 interactive cards with hover effects",
+        "1. Устойчивый результат без жестких ограничений",
+        "2. Адаптация под рабочий график и образ жизни",
+        "3. Поддержка и психология пищевого поведения",
+        "4. Безопасная техника и здоровье суставов/позвоночника"
+      ]
+    },
+    {
+      "id": "services",
+      "name": "Coaching Services & Packages",
+      "features": [
+        "Editable price placeholders (e.g., '[ 15 000 ₽ / мес ]')",
+        "1. Индивидуальное онлайн-наставничество",
+        "2. Персональные тренировки в Москве",
+        "3. Разовый разбор рациона и плана активностей",
+        "Direct 'Записаться' CTA opening Telegram inquiry with package pre-selected"
+      ]
+    },
+    {
+      "id": "results_gallery",
+      "name": "Client Results & Portfolio Gallery",
+      "features": [
+        "Clearly marked case placeholders (NO fake testimonials or invented claims)",
+        "Structure: Case Placeholder Card #1 (Цель: Коррекция осанки и тонус), Case Placeholder Card #2 (Цель: Энергия и выносливость)",
+        "Interactive tab/filter for case studies with clean layout"
+      ]
+    },
+    {
+      "id": "process",
+      "name": "4-Step Work Process",
+      "features": [
+        "Step 1: Диагностика и вводная консультация",
+        "Step 2: Разработка индивидуальной программы",
+        "Step 3: Тренировки и постепенное внедрение привычек",
+        "Step 4: Регулярный трекинг, коррекция и фиксация результата"
+      ]
+    },
+    {
+      "id": "contact_form",
+      "name": "Contact & Inquiry Form",
+      "features": [
+        "Interactive form that formats prefilled text and opens Telegram directly on submit",
+        "Inputs: Имя, Возраст, Главная цель, Сообщение",
+        "Displays direct Telegram & Instagram links prominently"
+      ]
+    },
+    {
+      "id": "footer",
+      "name": "Footer",
+      "features": [
+        "Sofi Rzaeva brand signature",
+        "Instagram link: https://www.instagram.com/sofi.rzaeva?rpxt=ZDRheGV1OG9xaXEz",
+        "Telegram link: https://t.me/sofi_rzaevaa",
+        "Copyright & Disclaimer note: 'Информация на сайте носит ознакомительный характер и не является гарантией результата.'"
+      ]
+    }
+  ],
+  "image_urls": {
+    "hero_portrait_placeholder": {
+      "url": "https://images.unsplash.com/photo-1720247207417-efc4365d5169?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODR8MHwxfHNlYXJjaHwyfHxmaXRuZXNzJTIwd29tZW4lMjB3b3Jrb3V0JTIwdHJhaW5pbmclMjBtaW5pbWFsaXN0fGVufDB8fHx8MTc5NDUwMDQwOXww&ixlib=rb-4.1.0&q=85",
+      "alt": "Sofi Rzaeva Fitness Mentor Placeholder",
+      "note": "Clearly marked frame: 'Фото Софи Рзаевой (Placeholder)'"
+    },
+    "about_image": {
+      "url": "https://images.unsplash.com/photo-1567013514336-6de53c9e7e63?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDN8MHwxfHNlYXJjaHw0fHxoZWFsdGh5JTIwbGlmZXN0eWxlJTIwd29tYW4lMjBzdHJldGNoaW5nJTIwd2VsbG5lc3N8ZW58MHx8fHwxNzk0NTAwNDA5fDA&ixlib=rb-4.1.0&q=85",
+      "alt": "Осознанный подход к фитнесу и здоровью"
+    },
+    "workout_atmosphere_1": {
+      "url": "https://images.unsplash.com/photo-1637430308606-86576d8fef3c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzN8MHwxfHNlYXJjaHxfhxkYXJrJTIwZ3ltJTIwYXRobGV0aWMlMjBzdHJlbmd0aCUyMGZpdG5lc3MlMjBtb3RpdmF0aW9ufGVufDB8fHx8MTc5NDUwMDQwOXww&ixlib=rb-4.1.0&q=85",
+      "alt": "Персональное пространство для тренировок"
+    },
+    "case_placeholder_1": {
+      "url": "https://images.unsplash.com/photo-1780695298088-0146c39a1d22?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODR8MHwxfHNlYXJjaHwzfHxmaXRuZXNzJTIwd29tZW4lMjB3b3Jrb3V0JTIwdHJhaW5pbmclMjBtaW5pbWFsaXN0fGVufDB8fHx8MTc5NDUwMDQwOXww&ixlib=rb-4.1.0&q=85",
+      "alt": "Кейс ученицы (Placeholder)"
+    },
+    "case_placeholder_2": {
+      "url": "https://images.unsplash.com/photo-1552196527-bffef41ef674?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDN8MHwxfHNlYXJjaHwyfHxoZWFsdGh5JTIwbGlmZXN0eWxlJTIwd29tYW4lMjBzdHJldGNoaW5nJTIwd2VsbG5lc3N8ZW58MHx8fHwxNzk0NTAwNDA5fDA&ixlib=rb-4.1.0&q=85",
+      "alt": "Результаты гибости и тонуса (Placeholder)"
+    }
+  },
+  "instructions_to_main_agent": [
+    "Build a responsive single page React landing page for Sofi Rzaeva in Russian.",
+    "Use Tailwind CSS and framer-motion for smooth entrance animations and scroll triggers.",
+    "Ensure all buttons and interactive items have unique data-testid attributes.",
+    "Do NOT fabricate credentials, medical guarantees, fake reviews, or invented client results.",
+    "Keep service price tags clearly marked as editable placeholders (e.g. 'от 15 000 ₽ / мес').",
+    "All main CTAs must direct visitors to Telegram (https://t.me/sofi_rzaevaa).",
+    "Include direct clickable links for Instagram (https://www.instagram.com/sofi.rzaeva?rpxt=ZDRheGV1OG9xaXEz) and Telegram.",
+    "The contact inquiry form should format the user input into a prefilled message and open Telegram on submission.",
+    "Integrate Lenis for smooth scrolling performance."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "You tend to converge toward generic outputs. Avoid AI slop: create distinctive, premium, memorable frontends.",
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients.",
+    "Never center align the app container (.App { text-align: center; }).",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects.",
+    "Use 2-3x more spacing than feels comfortable.",
+    "Subtle grain textures, noise overlays, selection states, and loading animations separate good from extraordinary.",
+    "All interactive elements MUST include data-testid attribute in kebab-case."
+  ]
+}
