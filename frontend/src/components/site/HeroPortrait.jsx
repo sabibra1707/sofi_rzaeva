@@ -1,5 +1,5 @@
 import { motion, useMotionValue, useSpring, useTransform, useScroll } from "framer-motion";
-import { ImageIcon } from "lucide-react";
+import { Trophy } from "lucide-react";
 import { EASE } from "./Reveal";
 
 export const HeroPortrait = () => {
@@ -24,15 +24,14 @@ export const HeroPortrait = () => {
         initial={{ clipPath: "inset(100% 0 0 0 round 28px)" }}
         animate={{ clipPath: "inset(0% 0 0 0 round 28px)" }}
         transition={{ duration: 1.4, ease: EASE, delay: 0.5 }}
-        className="relative aspect-[4/5] rounded-[28px] overflow-hidden bg-surface border border-white/10"
-        data-testid="hero-portrait-placeholder"
+        className="relative aspect-[3/4] rounded-[28px] overflow-hidden bg-[#e9e8e4] border border-white/10"
+        data-testid="hero-portrait"
       >
-        <motion.img style={{ y: imgY, scale: 1.15 }} src="/img/hero.jpg" alt="Временное атмосферное фото: силуэт женщины в луче света. Будет заменено на фото Софи Рзаевой" className="absolute inset-0 h-full w-full object-cover grayscale contrast-125" loading="eager" fetchPriority="high" width="1200" height="1798" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_30%,transparent_20%,rgba(8,9,12,0.85)_75%)]" />
-        <div className="absolute inset-0 mix-blend-color bg-neon/20" />
-        <figcaption style={{ transform: "translateZ(40px)" }} className="absolute left-4 right-4 bottom-4 rounded-2xl border border-dashed border-neon/50 bg-ink/70 backdrop-blur-md p-4">
-          <p className="flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.2em] text-neon"><ImageIcon className="h-3.5 w-3.5" />Место для фото</p>
-          <p className="mt-1 text-sm text-zinc-200">Здесь будет портрет Софи Рзаевой. Сейчас — временное изображение.</p>
+        <motion.img style={{ y: imgY, scale: 1.1 }} src="/img/sofi-hero.webp" alt="София Рзаева — фитнес-наставник, в спортивной форме с белым мячом в руках" className="absolute inset-0 h-full w-full object-cover object-[50%_35%]" loading="eager" fetchPriority="high" width="1000" height="1778" />
+        <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-ink/80 to-transparent" />
+        <figcaption style={{ transform: "translateZ(40px)" }} className="absolute left-4 right-4 bottom-4 rounded-2xl border border-white/15 bg-ink/75 backdrop-blur-md p-4 flex items-center gap-3">
+          <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-neon text-ink"><Trophy className="h-4 w-4" /></span>
+          <span><span className="block font-display uppercase text-sm">София Рзаева</span><span className="block text-xs text-zinc-300 mt-0.5">Финалистка чемпионата Европы</span></span>
         </figcaption>
       </motion.figure>
       <motion.div

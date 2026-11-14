@@ -18,17 +18,17 @@ export const ContactForm = () => {
 
   const submit = (e) => {
     e.preventDefault();
-    if (!f.name.trim()) { toast.error("Пожалуйста, укажите имя"); return; }
-    const text = [`Здравствуйте, Софи! Меня зовут ${f.name.trim()}.`, f.age && `Возраст: ${f.age}.`, `Цель: ${f.goal}.`, f.message.trim()].filter(Boolean).join("\n");
+    if (!f.name.trim()) { toast.error("Пожалуйста, укажи имя"); return; }
+    const text = [`Здравствуйте, София! Меня зовут ${f.name.trim()}.`, f.age && `Возраст: ${f.age}.`, `Цель: ${f.goal}.`, f.message.trim()].filter(Boolean).join("\n");
     navigator.clipboard?.writeText(text).catch(() => {});
     window.open(tgWithText(text), "_blank", "noopener,noreferrer");
-    toast.success("Открываем Telegram", { description: "Текст заявки также скопирован — при необходимости вставьте его в чат." });
+    toast.success("Открываем Telegram", { description: "Текст заявки также скопирован — при необходимости вставь его в чат." });
   };
 
   return (
     <form onSubmit={submit} noValidate data-testid="inquiry-form" className="rounded-[28px] border border-white/10 bg-surface p-6 sm:p-10 lg:p-12 space-y-8" aria-label="Форма заявки">
       <div className="grid sm:grid-cols-2 gap-8">
-        <Field id="name" label="Имя *"><input id="name" required autoComplete="given-name" value={f.name} onChange={set("name")} placeholder="Как к вам обращаться" className={inputCls} data-testid="form-name-input" /></Field>
+        <Field id="name" label="Имя *"><input id="name" required autoComplete="given-name" value={f.name} onChange={set("name")} placeholder="Как к тебе обращаться" className={inputCls} data-testid="form-name-input" /></Field>
         <Field id="age" label="Возраст"><input id="age" inputMode="numeric" value={f.age} onChange={set("age")} placeholder="Необязательно" className={inputCls} data-testid="form-age-input" /></Field>
       </div>
       <fieldset>
@@ -41,7 +41,7 @@ export const ContactForm = () => {
           ))}
         </div>
       </fieldset>
-      <Field id="message" label="Сообщение"><textarea id="message" rows={4} value={f.message} onChange={set("message")} placeholder="Расскажите немного о себе: опыт, график, ограничения" className={`${inputCls} resize-none`} data-testid="form-message-input" /></Field>
+      <Field id="message" label="Сообщение"><textarea id="message" rows={4} value={f.message} onChange={set("message")} placeholder="Расскажи немного о себе и своей цели" className={`${inputCls} resize-none`} data-testid="form-message-input" /></Field>
       <div className="flex flex-col sm:flex-row sm:items-center gap-5 justify-between pt-2">
         <p className="text-xs text-zinc-400 max-w-xs">Данные не сохраняются на сайте — форма лишь формирует сообщение в Telegram.</p>
         <button type="submit" data-testid="form-submit-button" className="group relative inline-flex items-center justify-center gap-3 rounded-full bg-neon text-ink font-semibold px-7 py-4 overflow-hidden transition-shadow duration-300 hover:shadow-[0_0_40px_rgba(0,255,157,0.45)]">

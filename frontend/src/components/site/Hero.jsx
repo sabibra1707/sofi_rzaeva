@@ -3,9 +3,9 @@ import { ArrowDown, MapPin } from "lucide-react";
 import { TgButton } from "./TgButton";
 import { HeroPortrait } from "./HeroPortrait";
 import { EASE, scrollToId } from "./Reveal";
-import { tgWithText, CONTACTS } from "../../data/content";
+import { tgWithText, CONTACTS, CTA_TEXT } from "../../data/content";
 
-const LINES = ["Фитнес", "без срывов", "и крайностей"];
+const LINES = ["Красивая фигура", "без диет, запретов", "и борьбы с собой"];
 
 const MaskLine = ({ text, i }) => (
   <span className="block overflow-hidden pb-[0.08em]">
@@ -33,24 +33,27 @@ export const Hero = () => {
       <div className="relative mx-auto max-w-[1360px] px-5 sm:px-8 lg:px-12 grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
         <div className="lg:col-span-7">
           <motion.p {...fade(0.2)} className="font-mono text-xs uppercase tracking-[0.28em] text-zinc-300 flex items-center gap-3">
-            <span className="h-2 w-2 rounded-full bg-neon animate-pulse" />Софи Рзаева · фитнес-наставник
+            <span className="h-2 w-2 rounded-full bg-neon animate-pulse" />София Рзаева · фитнес-наставник
           </motion.p>
-          <h1 id="hero-title" className="mt-7 font-display uppercase leading-[0.98] tracking-[-0.02em] text-[2.05rem] sm:text-6xl lg:text-[3.6rem] xl:text-[4.1rem]">
+          <h1 id="hero-title" className="mt-7 font-display uppercase leading-[0.98] tracking-[-0.02em] text-[1.7rem] sm:text-5xl lg:text-[2.7rem] xl:text-[3.2rem]">
             {LINES.map((l, i) => <MaskLine key={l} text={l} i={i} />)}
           </h1>
           <motion.p {...fade(0.85)} className="mt-8 max-w-xl text-base sm:text-lg text-zinc-300 leading-relaxed">
-            Наставничество для женщин 25–60 лет — офисных сотрудниц и тех, кто только начинает. Мой подход: устойчивое снижение веса, меньше циклов «сорвалась — начала заново» и больше уверенности в себе.
+            Помогаю женщинам менять фигуру, налаживать питание и выстраивать привычки, которые позволяют сохранять результат без постоянных ограничений.
+          </motion.p>
+          <motion.p {...fade(0.95)} className="mt-4 max-w-xl text-sm sm:text-base text-zinc-400 leading-relaxed">
+            Твоя цель — не просто похудеть. А чувствовать себя уверенно и комфортно в своём теле.
           </motion.p>
           <motion.div {...fade(1)} className="mt-10 flex flex-wrap items-center gap-5">
-            <TgButton testId="hero-telegram-cta" label="Записаться в Telegram" href={tgWithText("Здравствуйте, Софи! Хочу записаться на консультацию.")} />
+            <TgButton testId="hero-telegram-cta" label="Хочу на сопровождение" href={tgWithText(CTA_TEXT)} />
             <button onClick={() => scrollToId("about")} data-testid="hero-approach-link" className="group inline-flex items-center gap-2 text-sm text-zinc-300 hover:text-white transition-colors">
               <span className="grid h-10 w-10 place-items-center rounded-full border border-white/20 group-hover:border-neon transition-colors"><ArrowDown className="h-4 w-4 transition-transform group-hover:translate-y-0.5" /></span>
-              Узнать о подходе
+              Обо мне
             </button>
           </motion.div>
-          <motion.dl {...fade(1.15)} className="mt-14 grid grid-cols-3 max-w-lg border-t border-white/10 pt-6 text-sm">
-            <div><dt className="font-mono text-[11px] uppercase tracking-[0.2em] text-zinc-400">Для кого</dt><dd className="mt-1 font-display text-lg">25–60</dd></div>
-            <div><dt className="font-mono text-[11px] uppercase tracking-[0.2em] text-zinc-400">Формат</dt><dd className="mt-1 font-display text-lg">1 : 1</dd></div>
+          <motion.dl {...fade(1.15)} className="mt-14 grid grid-cols-3 gap-4 max-w-xl border-t border-white/10 pt-6 text-sm">
+            <div><dt className="font-mono text-[11px] uppercase tracking-[0.2em] text-zinc-400">Спорт</dt><dd className="mt-1 text-zinc-200 pr-2">Многократная чемпионка России</dd></div>
+            <div><dt className="font-mono text-[11px] uppercase tracking-[0.2em] text-zinc-400">Формат</dt><dd className="mt-1 text-zinc-200">Индивидуально, онлайн</dd></div>
             <div><dt className="font-mono text-[11px] uppercase tracking-[0.2em] text-zinc-400">Где</dt><dd className="mt-1 text-zinc-200 flex items-center gap-1"><MapPin className="h-3.5 w-3.5 text-neon" />{CONTACTS.city}</dd></div>
           </motion.dl>
         </div>

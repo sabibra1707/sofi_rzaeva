@@ -5,10 +5,11 @@ import { Toaster } from "./components/ui/sonner";
 import { Header } from "./components/site/Header";
 import { Hero } from "./components/site/Hero";
 import { Marquee } from "./components/site/Marquee";
-import { About } from "./components/site/About";
-import { Benefits } from "./components/site/Benefits";
-import { Services } from "./components/site/Services";
-import { Results } from "./components/site/Results";
+import { AboutSofi } from "./components/site/AboutSofi";
+import { Approach } from "./components/site/Approach";
+import { Coaching } from "./components/site/Coaching";
+import { ClientResults } from "./components/site/ClientResults";
+import { Reviews } from "./components/site/Reviews";
 import { Process } from "./components/site/Process";
 import { Contact } from "./components/site/Contact";
 import { Footer } from "./components/site/Footer";
@@ -34,10 +35,11 @@ function App() {
       <main id="main">
         <Hero />
         <Marquee />
-        <About />
-        <Benefits />
-        <Services />
-        <Results />
+        <AboutSofi />
+        <Approach />
+        <Coaching />
+        <ClientResults />
+        <Reviews />
         <Process />
         <Contact />
       </main>

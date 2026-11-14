@@ -17,6 +17,10 @@ Frontend-only React (CRA/craco) + Tailwind + framer-motion + lenis. No backend u
 - Slow editorial marquee, About/approach, bento benefits, 3 service cards ([цена] placeholders), 6 case placeholders (до/после), 4-step process with scroll progress line, contact (Telegram/Instagram + editable phone/email/hours), form → opens Telegram with prefilled message + copies text, footer with disclaimer
 - SEO: lang=ru, title, description, OG tags, SVG favicon
 
+## Update (2026-11-14)
+- Real photos: hero (sofi-hero.webp), about (sofi-about.webp); stock images removed
+- New content from Sofia: hero headline/subtitle, About + «Моя история» + achievements, «Мой подход» bento, single «Индивидуальное сопровождение» card (4 parts, [цена] placeholder) + «Что меняется», client results gallery (2 uploaded photos, lightbox), Reviews section (lightbox-ready, waiting for screenshots — REVIEWS array in content.js), clickable phone, new Instagram URL (?xtok=), final CTA «Готова начать?»
+
 ## Backlog
 - P0: Replace hero/about photos with Sofi's real photos; fill prices, bio, contacts
 - P1: Real client cases (with consent), FAQ section

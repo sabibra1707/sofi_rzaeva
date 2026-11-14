@@ -10,10 +10,8 @@ export const Process = () => {
 
   return (
     <section id="process" aria-labelledby="process-title" className="relative py-24 sm:py-32 lg:py-40 overflow-hidden">
-      <img src="/img/gym.jpg" alt="" aria-hidden="true" loading="lazy" className="absolute inset-0 h-full w-full object-cover opacity-[0.12] grayscale" />
-      <div className="absolute inset-0 bg-gradient-to-b from-ink via-ink/70 to-ink" />
       <div className="relative mx-auto max-w-[1360px] px-5 sm:px-8 lg:px-12">
-        <Reveal><Eyebrow index="05">Как мы работаем</Eyebrow></Reveal>
+        <Reveal><Eyebrow index="06">Как мы работаем</Eyebrow></Reveal>
         <Reveal delay={0.05}><h2 id="process-title" className="mt-6 font-display uppercase text-3xl sm:text-5xl leading-[1.02]">Четыре шага <span className="text-neon">к своему ритму</span></h2></Reveal>
         <div ref={ref} className="relative mt-16">
           <div className="absolute left-[19px] top-0 bottom-0 w-px bg-white/10 lg:left-0 lg:right-0 lg:top-[19px] lg:bottom-auto lg:h-px lg:w-auto" aria-hidden="true">
