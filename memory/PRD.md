@@ -49,6 +49,9 @@ Frontend-only React (CRA/craco) + Tailwind + framer-motion + lenis. No backend u
 - Nav item «Бесплатно» (neon) → #lemon; desktop nav from xl (≥1280), burger below
 - Share image /og-image.jpg 1200×630 (Sofia photo + headline); og/twitter tags. og:image is RELATIVE — make absolute once production domain is known
 
+## Update 9 (2026-11-14)
+- «Ты» voice for 5 new CHANGES items; +3 client results (result-6..8.webp), 8 total
+
 ## Backlog
 - P0: Replace hero/about photos with Sofi's real photos; fill prices, bio, contacts
 - P1: Real client cases (with consent), FAQ section
