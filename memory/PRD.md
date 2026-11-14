@@ -38,6 +38,9 @@ Frontend-only React (CRA/craco) + Tailwind + framer-motion + lenis. No backend u
 - Quotes in marquee are buttons → open the matching full review in lightbox (QUOTES[].review = REVIEWS src)
 - Clients counter «200+ клиентов уже прошли сопровождение» (CLIENTS_COUNT, stated by user)
 
+## Update 6 (2026-11-14)
+- CountUp 0→200+ on view (CountUp.jsx); FAQ #3 «нет возможности вступить» with buttons: channel @sofi_rzaevaa + DM @sofi_rzaeva prefilled «лимон»
+
 ## Backlog
 - P0: Replace hero/about photos with Sofi's real photos; fill prices, bio, contacts
 - P1: Real client cases (with consent), FAQ section

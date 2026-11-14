@@ -2,6 +2,7 @@ import { MessageSquareQuote } from "lucide-react";
 import { Reveal, Eyebrow } from "./Reveal";
 import { ZoomGallery } from "./ZoomGallery";
 import { REVIEWS, CLIENTS_COUNT } from "../../data/content";
+import { CountUp } from "./CountUp";
 
 const Empty = () => (
   <div data-testid="reviews-placeholder" className="rounded-[24px] border border-dashed border-white/20 stripes p-10 sm:p-14 flex flex-col sm:flex-row items-start sm:items-center gap-6">
@@ -24,7 +25,7 @@ export const Reviews = () => (
         </div>
         <Reveal delay={0.15}>
           <div data-testid="clients-counter" className="flex items-center gap-4 rounded-2xl border border-neon/40 bg-neon/[0.06] px-6 py-4">
-            <span className="font-display text-4xl sm:text-5xl text-neon leading-none">{CLIENTS_COUNT}</span>
+            <CountUp to={CLIENTS_COUNT} suffix="+" className="font-display text-4xl sm:text-5xl text-neon leading-none tabular-nums min-w-[4ch]" />
             <span className="text-sm text-zinc-200 leading-snug">клиентов уже прошли<br />сопровождение</span>
           </div>
         </Reveal>
