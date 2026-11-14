@@ -21,6 +21,11 @@ Frontend-only React (CRA/craco) + Tailwind + framer-motion + lenis. No backend u
 - Real photos: hero (sofi-hero.webp), about (sofi-about.webp); stock images removed
 - New content from Sofia: hero headline/subtitle, About + «Моя история» + achievements, «Мой подход» bento, single «Индивидуальное сопровождение» card (4 parts, [цена] placeholder) + «Что меняется», client results gallery (2 uploaded photos, lightbox), Reviews section (lightbox-ready, waiting for screenshots — REVIEWS array in content.js), clickable phone, new Instagram URL (?xtok=), final CTA «Готова начать?»
 
+## Update 2 (2026-11-14)
+- Reviews: 5 screenshots (review-1..5.webp) in masonry gallery with lightbox
+- Price → «По запросу» + DM link @sofi_rzaeva; all booking CTAs (tgWithText, TgButton default, mobile sticky CTA) → https://t.me/sofi_rzaeva (personal); channel @sofi_rzaevaa kept in contacts/footer
+- Mobile sticky «Хочу на сопровождение» button (MobileCta.jsx)
+
 ## Backlog
 - P0: Replace hero/about photos with Sofi's real photos; fill prices, bio, contacts
 - P1: Real client cases (with consent), FAQ section

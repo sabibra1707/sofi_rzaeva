@@ -1,7 +1,7 @@
 import { Check } from "lucide-react";
 import { Reveal, Eyebrow } from "./Reveal";
 import { TgButton } from "./TgButton";
-import { COACHING, CHANGES, COACHING_PRICE, tgWithText, CTA_TEXT } from "../../data/content";
+import { COACHING, CHANGES, COACHING_PRICE, LINKS, tgWithText, CTA_TEXT } from "../../data/content";
 
 const Part = ({ c }) => (
   <li className="group border-t border-white/10 py-6 grid grid-cols-[auto_1fr] gap-5">
@@ -33,6 +33,7 @@ export const Coaching = () => (
             <div className="mt-auto pt-10">
               <p className="border-t border-white/10 pt-6 font-mono text-[11px] uppercase tracking-[0.2em] text-zinc-400">Стоимость</p>
               <p className="mt-2 font-display text-3xl sm:text-4xl" data-testid="coaching-price">{COACHING_PRICE}</p>
+              <p className="mt-3 text-sm text-zinc-300">Узнать стоимость можно в личных сообщениях в Telegram: <a href={LINKS.telegramDM} target="_blank" rel="noopener noreferrer" data-testid="coaching-price-dm-link" className="text-neon underline underline-offset-4 hover:text-white transition-colors">@sofi_rzaeva</a></p>
               <TgButton className="mt-6" label="Хочу на сопровождение" testId="coaching-telegram-cta" href={tgWithText(CTA_TEXT)} />
             </div>
           </div>

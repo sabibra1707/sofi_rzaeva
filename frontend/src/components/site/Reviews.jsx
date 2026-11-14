@@ -17,9 +17,10 @@ export const Reviews = () => (
   <section id="reviews" aria-labelledby="reviews-title" className="py-24 sm:py-32 bg-surface/40 border-y border-white/5">
     <div className="mx-auto max-w-[1360px] px-5 sm:px-8 lg:px-12">
       <Reveal><Eyebrow index="05">Отзывы</Eyebrow></Reveal>
-      <Reveal delay={0.05}><h2 id="reviews-title" className="mt-6 mb-12 font-display uppercase text-3xl sm:text-5xl leading-[1.02]">Слова <span className="text-neon">клиенток</span></h2></Reveal>
+      <Reveal delay={0.05}><h2 id="reviews-title" className="mt-6 font-display uppercase text-3xl sm:text-5xl leading-[1.02]">Слова <span className="text-neon">клиенток</span></h2></Reveal>
+      <Reveal delay={0.1}><p className="mt-4 mb-12 font-mono text-[11px] uppercase tracking-[0.2em] text-zinc-400">Нажми на отзыв, чтобы увеличить</p></Reveal>
       {REVIEWS.length ? (
-        <ZoomGallery items={REVIEWS} prefix="review" gridClass="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5" frameClass="aspect-[9/16]" />
+        <ZoomGallery items={REVIEWS} prefix="review" gridClass="columns-1 sm:columns-2 lg:columns-3 gap-5 [&>li]:mb-5 [&>li]:break-inside-avoid" />
       ) : <Reveal><Empty /></Reveal>}
     </div>
   </section>

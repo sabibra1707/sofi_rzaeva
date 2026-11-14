@@ -1,7 +1,7 @@
 import { Send, ArrowUpRight } from "lucide-react";
 import { LINKS } from "../../data/content";
 
-export const TgButton = ({ href = LINKS.telegram, label = "Написать в Telegram", testId, size = "lg", className = "" }) => {
+export const TgButton = ({ href = LINKS.telegramDM, label = "Написать в Telegram", testId, size = "lg", className = "" }) => {
   const pad = size === "lg" ? "pl-6 pr-2 py-2 text-sm sm:text-base" : "pl-4 pr-1.5 py-1.5 text-sm";
   return (
     <a

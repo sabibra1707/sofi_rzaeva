@@ -1,11 +1,12 @@
 // Editable site content: links, contacts, prices, placeholders
 export const LINKS = {
   telegram: "https://t.me/sofi_rzaevaa",
+  telegramDM: "https://t.me/sofi_rzaeva",
   instagram: "https://www.instagram.com/sofi.rzaeva?xtok=ZDRheGV1OG9xaXEz",
   phone: "tel:+79254659943",
 };
 
-export const tgWithText = (text) => `${LINKS.telegram}?text=${encodeURIComponent(text)}`;
+export const tgWithText = (text) => `${LINKS.telegramDM}?text=${encodeURIComponent(text)}`;
 
 export const CONTACTS = {
   city: "Москва · онлайн",
@@ -55,15 +56,20 @@ export const CHANGES = [
   "Растёт уверенность в себе и комфорт в собственном теле.",
 ];
 
-export const COACHING_PRICE = "[цена] ₽";
+export const COACHING_PRICE = "По запросу";
 
 export const RESULTS = [
   { src: "/img/result-1.webp", w: 1125, h: 2000, alt: "Результат клиентки: фото фигуры спереди, сбоку и сзади — до (сверху) и после (снизу)" },
   { src: "/img/result-2.webp", w: 1179, h: 1682, alt: "Результат клиентки: фото фигуры спереди, сбоку и сзади — до (сверху) и после (снизу)" },
 ];
 
-// Add review screenshots here: { src: "/img/review-1.webp", alt: "Отзыв клиентки" }
-export const REVIEWS = [];
+export const REVIEWS = [
+  { src: "/img/review-5.webp", w: 1001, h: 1538, alt: "Скриншот отзыва: итоги двух месяцев работы — подтянулись бока и живот, ровная спина, классный старт" },
+  { src: "/img/review-4.webp", w: 1064, h: 1026, alt: "Скриншот отзыва: результат получился ненавязчиво и с удовольствием, практика превращается в привычку" },
+  { src: "/img/review-3.webp", w: 1067, h: 1340, alt: "Скриншот отзыва: благодарность за месяц совместной работы, регулярные тренировки и питание в ритме" },
+  { src: "/img/review-2.webp", w: 968, h: 278, alt: "Скриншот отзыва: офигенные тренировки, пришла в себя, спасибо" },
+  { src: "/img/review-1.webp", w: 1100, h: 558, alt: "Скриншот отзыва: шорты, которые год назад не налезали, теперь сидят идеально" },
+];
 
 export const STEPS = [
   { n: "01", title: "Заявка", text: "Пишешь мне в Telegram и рассказываешь о своей цели." },

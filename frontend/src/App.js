@@ -13,6 +13,7 @@ import { Reviews } from "./components/site/Reviews";
 import { Process } from "./components/site/Process";
 import { Contact } from "./components/site/Contact";
 import { Footer } from "./components/site/Footer";
+import { MobileCta } from "./components/site/MobileCta";
 
 const useLenis = () => {
   useEffect(() => {
@@ -44,6 +45,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
+      <MobileCta />
       <Toaster theme="dark" position="bottom-center" />
     </div>
   );

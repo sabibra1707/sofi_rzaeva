@@ -21,7 +21,8 @@ export const Contact = () => (
         <Reveal delay={0.05}><h2 id="contact-title" className="mt-6 font-display uppercase text-3xl sm:text-5xl leading-[1.02]">Начнём <span className="text-neon">с разговора</span></h2></Reveal>
         <Reveal delay={0.1}><p className="mt-6 text-zinc-400 leading-relaxed max-w-md">Напиши мне, расскажи о своей цели — и мы обсудим, как выстроить путь к ней. Форма откроет чат в Telegram с готовым сообщением.</p></Reveal>
         <Reveal delay={0.15} className="mt-10 space-y-3">
-          <Social href={LINKS.telegram} icon={Send} label="Telegram" handle="@sofi_rzaevaa" testId="contact-telegram-link" />
+          <Social href={LINKS.telegramDM} icon={Send} label="Telegram · личные сообщения" handle="@sofi_rzaeva" testId="contact-telegram-link" />
+          <Social href={LINKS.telegram} icon={Send} label="Telegram-канал" handle="@sofi_rzaevaa" testId="contact-telegram-channel-link" />
           <Social href={LINKS.instagram} icon={Instagram} label="Instagram" handle="@sofi.rzaeva" testId="contact-instagram-link" />
           <Social href={LINKS.phone} icon={Phone} label="Позвонить" handle={CONTACTS.phone} testId="contact-phone-link" external={false} />
         </Reveal>

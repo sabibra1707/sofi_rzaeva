@@ -5,7 +5,7 @@ import { Instagram, Phone } from "lucide-react";
 import { LINKS, NAV, CONTACTS, tgWithText, CTA_TEXT } from "../../data/content";
 
 export const Footer = () => (
-  <footer className="relative border-t border-white/10 pt-20 pb-10 overflow-hidden" data-testid="site-footer">
+  <footer className="relative border-t border-white/10 pt-20 overflow-hidden pb-28 lg:pb-10" data-testid="site-footer">
     <div className="mx-auto max-w-[1360px] px-5 sm:px-8 lg:px-12">
       <Reveal className="flex flex-col lg:flex-row lg:items-end justify-between gap-10">
         <div>
