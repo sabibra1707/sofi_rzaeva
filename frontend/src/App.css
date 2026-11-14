@@ -43,6 +43,7 @@ body {
 
 .marquee { animation: marquee 60s linear infinite; }
 .marquee:hover { animation-play-state: paused; }
+.marquee-slow { animation-duration: 90s; }
 @keyframes marquee { to { transform: translateX(-50%); } }
 
 .nav-link { position: relative; }

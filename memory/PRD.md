@@ -26,6 +26,11 @@ Frontend-only React (CRA/craco) + Tailwind + framer-motion + lenis. No backend u
 - Price → «По запросу» + DM link @sofi_rzaeva; all booking CTAs (tgWithText, TgButton default, mobile sticky CTA) → https://t.me/sofi_rzaeva (personal); channel @sofi_rzaevaa kept in contacts/footer
 - Mobile sticky «Хочу на сопровождение» button (MobileCta.jsx)
 
+## Update 3 (2026-11-14)
+- Hero photo removed (typographic hero + rotating badge); only about photo of Sofia remains; og-sofi.jpg from about photo
+- Results: +3 photos (result-3..5), masonry; uploaded pink duplicate skipped
+- QuoteMarquee with verbatim quotes from review screenshots; FAQ accordion (Зал answer = placeholder)
+
 ## Backlog
 - P0: Replace hero/about photos with Sofi's real photos; fill prices, bio, contacts
 - P1: Real client cases (with consent), FAQ section

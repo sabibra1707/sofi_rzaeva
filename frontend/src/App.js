@@ -14,6 +14,8 @@ import { Process } from "./components/site/Process";
 import { Contact } from "./components/site/Contact";
 import { Footer } from "./components/site/Footer";
 import { MobileCta } from "./components/site/MobileCta";
+import { QuoteMarquee } from "./components/site/QuoteMarquee";
+import { Faq } from "./components/site/Faq";
 
 const useLenis = () => {
   useEffect(() => {
@@ -40,8 +42,10 @@ function App() {
         <Approach />
         <Coaching />
         <ClientResults />
+        <QuoteMarquee />
         <Reviews />
         <Process />
+        <Faq />
         <Contact />
       </main>
       <Footer />

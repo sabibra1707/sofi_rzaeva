@@ -17,7 +17,7 @@ export const Contact = () => (
   <section id="contact" aria-labelledby="contact-title" className="py-24 sm:py-32 lg:py-40 border-t border-white/5">
     <div className="mx-auto max-w-[1360px] px-5 sm:px-8 lg:px-12 grid lg:grid-cols-12 gap-14">
       <div className="lg:col-span-5">
-        <Reveal><Eyebrow index="07">Контакты</Eyebrow></Reveal>
+        <Reveal><Eyebrow index="08">Контакты</Eyebrow></Reveal>
         <Reveal delay={0.05}><h2 id="contact-title" className="mt-6 font-display uppercase text-3xl sm:text-5xl leading-[1.02]">Начнём <span className="text-neon">с разговора</span></h2></Reveal>
         <Reveal delay={0.1}><p className="mt-6 text-zinc-400 leading-relaxed max-w-md">Напиши мне, расскажи о своей цели — и мы обсудим, как выстроить путь к ней. Форма откроет чат в Telegram с готовым сообщением.</p></Reveal>
         <Reveal delay={0.15} className="mt-10 space-y-3">
