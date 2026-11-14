@@ -17,6 +17,7 @@ import { MobileCta } from "./components/site/MobileCta";
 import { QuoteMarquee } from "./components/site/QuoteMarquee";
 import { Faq } from "./components/site/Faq";
 import { LemonBlock } from "./components/site/LemonBlock";
+import { ChatWidget } from "./components/site/ChatWidget";
 
 const useLenis = () => {
   useEffect(() => {
@@ -52,6 +53,7 @@ function App() {
       </main>
       <Footer />
       <MobileCta />
+      <ChatWidget />
       <Toaster theme="dark" position="bottom-center" />
     </div>
   );

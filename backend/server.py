@@ -28,6 +28,9 @@ INDEXES: dict[str, list[IndexModel]] = {
         IndexModel([("id", ASCENDING)], name="id", unique=True),
         IndexModel([("timestamp", DESCENDING)], name="timestamp_desc"),
     ],
+    "chat_messages": [
+        IndexModel([("session_id", ASCENDING), ("created_at", ASCENDING)], name="session_created"),
+    ],
 }
 
 
@@ -87,6 +90,8 @@ async def get_status_checks(limit: int = Query(20, ge=1, le=100)):
     return status_checks
 
 # Include the router in the main app
+from chat import build_chat_router  # noqa: E402
+api_router.include_router(build_chat_router(db))
 app.include_router(api_router)
 
 app.add_middleware(

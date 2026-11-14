@@ -52,6 +52,10 @@ Frontend-only React (CRA/craco) + Tailwind + framer-motion + lenis. No backend u
 ## Update 9 (2026-11-14)
 - «Ты» voice for 5 new CHANGES items; +3 client results (result-6..8.webp), 8 total
 
+## Update 10 (2026-11-14)
+- AI chat assistant (ChatGPT gpt-5.6-terra via Emergent Universal Key): backend/chat.py — POST /api/chat/stream (SSE), GET /api/chat/history/{session_id}; history in Mongo `chat_messages` per browser session (localStorage id), 30 user msgs/session cap; system prompt limited to site facts, no prices/medical advice → Telegram @sofi_rzaeva
+- Frontend ChatWidget.jsx floating button (above mobile sticky CTA) with suggestions + streaming
+
 ## Backlog
 - P0: Replace hero/about photos with Sofi's real photos; fill prices, bio, contacts
 - P1: Real client cases (with consent), FAQ section
