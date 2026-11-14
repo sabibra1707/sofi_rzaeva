@@ -31,6 +31,9 @@ Frontend-only React (CRA/craco) + Tailwind + framer-motion + lenis. No backend u
 - Results: +3 photos (result-3..5), masonry; uploaded pink duplicate skipped
 - QuoteMarquee with verbatim quotes from review screenshots; FAQ accordion (Зал answer = placeholder)
 
+## Update 4 (2026-11-14)
+- FAQ «Нужен ли зал?» answer from Sofia; +5 review screenshots (review-6..10) and 6 new quotes; form left unchanged per user
+
 ## Backlog
 - P0: Replace hero/about photos with Sofi's real photos; fill prices, bio, contacts
 - P1: Real client cases (with consent), FAQ section
