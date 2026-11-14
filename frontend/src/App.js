@@ -16,6 +16,7 @@ import { Footer } from "./components/site/Footer";
 import { MobileCta } from "./components/site/MobileCta";
 import { QuoteMarquee } from "./components/site/QuoteMarquee";
 import { Faq } from "./components/site/Faq";
+import { LemonBlock } from "./components/site/LemonBlock";
 
 const useLenis = () => {
   useEffect(() => {
@@ -47,6 +48,7 @@ function App() {
         <Process />
         <Faq />
         <Contact />
+        <LemonBlock />
       </main>
       <Footer />
       <MobileCta />

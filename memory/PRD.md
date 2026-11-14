@@ -41,6 +41,10 @@ Frontend-only React (CRA/craco) + Tailwind + framer-motion + lenis. No backend u
 ## Update 6 (2026-11-14)
 - CountUp 0→200+ on view (CountUp.jsx); FAQ #3 «нет возможности вступить» with buttons: channel @sofi_rzaevaa + DM @sofi_rzaeva prefilled «лимон»
 
+## Update 7 (2026-11-14)
+- Under reviews: «Больше информации:» Telegram (channel) + Instagram links
+- LemonBlock before footer: free consultation by code word «лимон» → DM @sofi_rzaeva prefilled
+
 ## Backlog
 - P0: Replace hero/about photos with Sofi's real photos; fill prices, bio, contacts
 - P1: Real client cases (with consent), FAQ section

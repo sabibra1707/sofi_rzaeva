@@ -1,7 +1,7 @@
-import { MessageSquareQuote } from "lucide-react";
+import { MessageSquareQuote, Send, Instagram } from "lucide-react";
 import { Reveal, Eyebrow } from "./Reveal";
 import { ZoomGallery } from "./ZoomGallery";
-import { REVIEWS, CLIENTS_COUNT } from "../../data/content";
+import { REVIEWS, CLIENTS_COUNT, LINKS } from "../../data/content";
 import { CountUp } from "./CountUp";
 
 const Empty = () => (
@@ -34,6 +34,15 @@ export const Reviews = () => (
       {REVIEWS.length ? (
         <ZoomGallery items={REVIEWS} prefix="review" gridClass="columns-1 sm:columns-2 lg:columns-3 gap-5 [&>li]:mb-5 [&>li]:break-inside-avoid" />
       ) : <Reveal><Empty /></Reveal>}
+      <Reveal className="mt-12">
+        <div data-testid="reviews-more-info" className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 border-t border-white/10 pt-8">
+          <p className="font-mono text-xs uppercase tracking-[0.22em] text-zinc-300">Больше информации:</p>
+          <div className="flex flex-wrap gap-3">
+            <a href={LINKS.telegram} target="_blank" rel="noopener noreferrer" data-testid="reviews-telegram-link" className="inline-flex items-center gap-2 rounded-full border border-white/25 px-5 py-2.5 text-sm font-semibold hover:border-neon hover:text-neon transition-colors"><Send className="h-4 w-4" />Telegram</a>
+            <a href={LINKS.instagram} target="_blank" rel="noopener noreferrer" data-testid="reviews-instagram-link" className="inline-flex items-center gap-2 rounded-full border border-white/25 px-5 py-2.5 text-sm font-semibold hover:border-neon hover:text-neon transition-colors"><Instagram className="h-4 w-4" />Instagram</a>
+          </div>
+        </div>
+      </Reveal>
     </div>
   </section>
 );
