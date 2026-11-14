@@ -34,8 +34,7 @@ export const AboutSofi = () => (
           <h2 id="about-title" className="mt-6 font-display uppercase text-3xl sm:text-5xl leading-[1.02]">Меня зовут <span className="text-neon">София Рзаева</span></h2>
         </Reveal>
         <Reveal delay={0.1}>
-          <p className="mt-8 text-base sm:text-lg text-zinc-200 leading-relaxed">Я многократная чемпионка России, финалистка чемпионата Европы, фитнес-артист, спикер и наставник для тренеров.</p>
-          <p className="mt-5 text-base text-zinc-400 leading-relaxed">Со временем я поняла: для устойчивых изменений недостаточно просто знать, что есть и как тренироваться. Важно разобраться с привычками, эмоциями и причинами, которые мешают действовать регулярно.</p>
+          <p className="mt-8 text-base sm:text-lg text-zinc-200 leading-relaxed">Со временем я поняла: для устойчивых изменений недостаточно просто знать, что есть и как тренироваться. Важно разобраться с привычками, эмоциями и причинами, которые мешают действовать регулярно.</p>
         </Reveal>
         <Reveal delay={0.1} className="mt-12">
           <h3 className="font-mono text-xs uppercase tracking-[0.28em] text-zinc-400">Почему мне доверяют</h3>
