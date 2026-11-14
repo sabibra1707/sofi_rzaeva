@@ -45,6 +45,10 @@ Frontend-only React (CRA/craco) + Tailwind + framer-motion + lenis. No backend u
 - Under reviews: «Больше информации:» Telegram (channel) + Instagram links
 - LemonBlock before footer: free consultation by code word «лимон» → DM @sofi_rzaeva prefilled
 
+## Update 8 (2026-11-14)
+- Nav item «Бесплатно» (neon) → #lemon; desktop nav from xl (≥1280), burger below
+- Share image /og-image.jpg 1200×630 (Sofia photo + headline); og/twitter tags. og:image is RELATIVE — make absolute once production domain is known
+
 ## Backlog
 - P0: Replace hero/about photos with Sofi's real photos; fill prices, bio, contacts
 - P1: Real client cases (with consent), FAQ section

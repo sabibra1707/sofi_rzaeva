@@ -22,6 +22,7 @@ export const NAV = [
   { id: "results", label: "Результаты" },
   { id: "reviews", label: "Отзывы" },
   { id: "faq", label: "Вопросы" },
+  { id: "lemon", label: "Бесплатно" },
   { id: "contact", label: "Контакты" },
 ];
 

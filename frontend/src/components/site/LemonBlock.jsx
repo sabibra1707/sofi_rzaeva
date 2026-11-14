@@ -5,7 +5,7 @@ import { TgButton } from "./TgButton";
 import { tgWithText } from "../../data/content";
 
 export const LemonBlock = () => (
-  <section aria-labelledby="lemon-title" className="pb-24 sm:pb-32">
+  <section id="lemon" aria-labelledby="lemon-title" className="pb-24 sm:pb-32">
     <Reveal className="mx-auto max-w-[1360px] px-5 sm:px-8 lg:px-12">
       <div data-testid="lemon-block" className="relative overflow-hidden rounded-[32px] border border-neon/50 bg-neon/[0.07] p-8 sm:p-14 grid lg:grid-cols-12 gap-10 items-center shadow-[0_40px_120px_-50px_rgba(0,255,157,0.55)]">
         <motion.span

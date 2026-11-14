@@ -7,7 +7,7 @@ export const HeroBadge = () => (
     initial={{ opacity: 0, rotate: -40, scale: 0.8 }}
     animate={{ opacity: 1, rotate: 0, scale: 1 }}
     transition={{ duration: 1.2, ease: EASE, delay: 1.1 }}
-    className="hidden md:block absolute right-8 lg:right-12 -top-2 h-32 w-32 lg:h-40 lg:w-40"
+    className="hidden xl:block absolute right-8 lg:right-12 -top-2 h-32 w-32 lg:h-40 lg:w-40"
   >
     <svg viewBox="0 0 100 100" className="h-full w-full animate-[spin_18s_linear_infinite]">
       <defs><path id="circ" d="M50,50 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0" /></defs>
