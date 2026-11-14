@@ -57,8 +57,8 @@ export const Hero = () => {
           </motion.div>
         </div>
         <div className="lg:col-span-5">
-          <motion.dl {...fade(1.15)} className="grid grid-cols-3 lg:grid-cols-1 gap-4 lg:gap-5 border-t lg:border-t-0 lg:border-l border-white/10 pt-6 lg:pt-0 lg:pl-8 text-sm">
-            <div><dt className="font-mono text-[11px] uppercase tracking-[0.2em] text-zinc-400">Спорт</dt><dd className="mt-1 text-zinc-200 pr-2">Многократная чемпионка России</dd></div>
+          <motion.dl {...fade(1.15)} className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-1 gap-4 lg:gap-5 border-t lg:border-t-0 lg:border-l border-white/10 pt-6 lg:pt-0 lg:pl-8 text-sm">
+            <div className="col-span-2 sm:col-span-1"><dt className="font-mono text-[11px] uppercase tracking-[0.2em] text-zinc-400">Спорт</dt><dd className="mt-1 text-zinc-200 pr-2">Многократная чемпионка России по фитнес-аэробике</dd></div>
             <div><dt className="font-mono text-[11px] uppercase tracking-[0.2em] text-zinc-400">Формат</dt><dd className="mt-1 text-zinc-200">Индивидуально, онлайн</dd></div>
             <div><dt className="font-mono text-[11px] uppercase tracking-[0.2em] text-zinc-400">Где</dt><dd className="mt-1 text-zinc-200 flex items-center gap-1"><MapPin className="h-3.5 w-3.5 text-neon" />{CONTACTS.city}</dd></div>
           </motion.dl>
