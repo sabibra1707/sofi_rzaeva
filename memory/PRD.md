@@ -34,6 +34,10 @@ Frontend-only React (CRA/craco) + Tailwind + framer-motion + lenis. No backend u
 ## Update 4 (2026-11-14)
 - FAQ «Нужен ли зал?» answer from Sofia; +5 review screenshots (review-6..10) and 6 new quotes; form left unchanged per user
 
+## Update 5 (2026-11-14)
+- Quotes in marquee are buttons → open the matching full review in lightbox (QUOTES[].review = REVIEWS src)
+- Clients counter «200+ клиентов уже прошли сопровождение» (CLIENTS_COUNT, stated by user)
+
 ## Backlog
 - P0: Replace hero/about photos with Sofi's real photos; fill prices, bio, contacts
 - P1: Real client cases (with consent), FAQ section
