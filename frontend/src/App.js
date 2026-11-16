@@ -17,8 +17,6 @@ import { MobileCta } from "./components/site/MobileCta";
 import { QuoteMarquee } from "./components/site/QuoteMarquee";
 import { Faq } from "./components/site/Faq";
 import { LemonBlock } from "./components/site/LemonBlock";
-import { ChatWidget } from "./components/site/ChatWidget";
-
 const useLenis = () => {
   useEffect(() => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return undefined;
@@ -53,8 +51,7 @@ function App() {
       </main>
       <Footer />
       <MobileCta />
-      <ChatWidget />
-      <Toaster theme="dark" position="bottom-center" />
+        <Toaster theme="dark" position="bottom-center" />
     </div>
   );
 }
