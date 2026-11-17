@@ -1,4 +1,4 @@
-import { Instagram, Send, Phone } from "lucide-react";
+import { MessageCircle, Send, Phone } from "lucide-react";
 import { Reveal, Eyebrow } from "./Reveal";
 import { ContactForm } from "./ContactForm";
 import { LINKS, CONTACTS } from "../../data/content";
@@ -23,7 +23,7 @@ export const Contact = () => (
         <Reveal delay={0.15} className="mt-10 space-y-3">
           <Social href={LINKS.telegramDM} icon={Send} label="Telegram · личные сообщения" handle="@sofi_rzaeva" testId="contact-telegram-link" />
           <Social href={LINKS.telegram} icon={Send} label="Telegram-канал" handle="@sofi_rzaevaa" testId="contact-telegram-channel-link" />
-          <Social href={LINKS.instagram} icon={Instagram} label="Instagram" handle="@sofi.rzaeva" testId="contact-instagram-link" />
+          <Social href={LINKS.max} icon={MessageCircle} label="MAX" handle="Написать в MAX" testId="contact-max-link" />
           <Social href={LINKS.phone} icon={Phone} label="Позвонить" handle={CONTACTS.phone} testId="contact-phone-link" external={false} />
         </Reveal>
         <Reveal delay={0.2}><p className="mt-8 font-mono text-[11px] uppercase tracking-[0.2em] text-zinc-400">{CONTACTS.city}</p></Reveal>
