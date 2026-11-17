@@ -2,7 +2,7 @@
 export const LINKS = {
   telegram: "https://t.me/sofi_rzaevaa",
   telegramDM: "https://t.me/sofi_rzaeva",
-  instagram: "https://www.instagram.com/sofi.rzaeva?xtok=ZDRheGV1OG9xaXEz",
+  max: "https://max.ru/u/f9LHodD0cOKPSP1vNRs531r02RfaIwJPVa1DPsJoPa3jSvmQlq6E8jliFWc",
   phone: "tel:+79254659943",
 };
 
