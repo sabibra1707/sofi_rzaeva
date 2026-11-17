@@ -1,4 +1,4 @@
-import { MessageSquareQuote, Send, Instagram } from "lucide-react";
+import { MessageSquareQuote, Send, MessageCircle } from "lucide-react";
 import { Reveal, Eyebrow } from "./Reveal";
 import { ZoomGallery } from "./ZoomGallery";
 import { REVIEWS, CLIENTS_COUNT, LINKS } from "../../data/content";
@@ -39,7 +39,7 @@ export const Reviews = () => (
           <p className="font-mono text-xs uppercase tracking-[0.22em] text-zinc-300">Больше информации:</p>
           <div className="flex flex-wrap gap-3">
             <a href={LINKS.telegram} target="_blank" rel="noopener noreferrer" data-testid="reviews-telegram-link" className="inline-flex items-center gap-2 rounded-full border border-white/25 px-5 py-2.5 text-sm font-semibold hover:border-neon hover:text-neon transition-colors"><Send className="h-4 w-4" />Telegram</a>
-            <a href={LINKS.instagram} target="_blank" rel="noopener noreferrer" data-testid="reviews-instagram-link" className="inline-flex items-center gap-2 rounded-full border border-white/25 px-5 py-2.5 text-sm font-semibold hover:border-neon hover:text-neon transition-colors"><Instagram className="h-4 w-4" />Instagram</a>
+            <a href={LINKS.max} target="_blank" rel="noopener noreferrer" data-testid="reviews-max-link" className="inline-flex items-center gap-2 rounded-full border border-white/25 px-5 py-2.5 text-sm font-semibold hover:border-neon hover:text-neon transition-colors"><MessageCircle className="h-4 w-4" />MAX</a>
           </div>
         </div>
       </Reveal>
