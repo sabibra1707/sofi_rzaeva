@@ -1,7 +1,7 @@
 import { Logo } from "./Logo";
 import { TgButton } from "./TgButton";
 import { Reveal } from "./Reveal";
-import { Instagram, Phone } from "lucide-react";
+import { MessageCircle, Phone } from "lucide-react";
 import { LINKS, NAV, CONTACTS, tgWithText, CTA_TEXT } from "../../data/content";
 
 export const Footer = () => (
@@ -14,7 +14,7 @@ export const Footer = () => (
         </div>
         <div className="flex flex-wrap gap-3">
           <TgButton testId="footer-telegram-cta" label="Хочу на сопровождение" href={tgWithText(CTA_TEXT)} />
-          <a href={LINKS.instagram} target="_blank" rel="noopener noreferrer" data-testid="footer-instagram-cta" className="inline-flex items-center gap-2 rounded-full border border-white/25 px-6 py-4 font-semibold hover:border-neon hover:text-neon transition-colors"><Instagram className="h-4 w-4" />Instagram</a>
+          <a href={LINKS.max} target="_blank" rel="noopener noreferrer" data-testid="footer-max-cta" className="inline-flex items-center gap-2 rounded-full border border-white/25 px-6 py-4 font-semibold hover:border-neon hover:text-neon transition-colors"><MessageCircle className="h-4 w-4" />MAX</a>
         </div>
       </Reveal>
       <div className="mt-20 grid gap-10 md:grid-cols-3 border-t border-white/10 pt-10">
@@ -26,7 +26,7 @@ export const Footer = () => (
         </nav>
         <ul className="flex flex-wrap md:justify-end gap-6 text-sm">
           <li><a href={LINKS.telegram} target="_blank" rel="noopener noreferrer" data-testid="footer-telegram-link" className="nav-link text-zinc-200">Telegram</a></li>
-          <li><a href={LINKS.instagram} target="_blank" rel="noopener noreferrer" data-testid="footer-instagram-link" className="nav-link text-zinc-200">Instagram</a></li>
+         <li><a href={LINKS.max} target="_blank" rel="noopener noreferrer" data-testid="footer-max-link" className="nav-link text-zinc-200">MAX</a></li>
           <li><a href={LINKS.phone} data-testid="footer-phone-link" className="nav-link text-zinc-200 inline-flex items-center gap-1"><Phone className="h-3.5 w-3.5" />{CONTACTS.phone}</a></li>
         </ul>
       </div>
