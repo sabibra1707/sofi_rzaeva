@@ -15,21 +15,45 @@ export function CookieConsent() {
   const [settingsOpen, setSettingsOpen] = useState(false);
 
   useEffect(() => {
+    const openSettings = () => setSettingsOpen(true);
+
+    window.addEventListener(
+      "open-analytics-settings",
+      openSettings
+    );
+
+    return () => {
+      window.removeEventListener(
+        "open-analytics-settings",
+        openSettings
+      );
+    };
+  }, []);
+
+  useEffect(() => {
     if (consent === "accepted") {
       window.startYandexMetrika?.();
     }
   }, [consent]);
 
   const saveChoice = (choice) => {
+    const wasAccepted =
+      consent === "accepted" ||
+      window.yandexMetrikaStarted === true;
+
     try {
       localStorage.setItem(STORAGE_KEY, choice);
     } catch {
-      // Если сохранение недоступно, выбор действует
-      // только до закрытия страницы.
+      // Если хранилище недоступно,
+      // выбор действует в текущей вкладке.
     }
 
     setConsent(choice);
     setSettingsOpen(false);
+
+    if (choice === "rejected" && wasAccepted) {
+      window.location.reload();
+    }
   };
 
   const showBanner = consent === null || settingsOpen;
@@ -43,16 +67,20 @@ export function CookieConsent() {
           className="fixed bottom-4 left-4 right-4 z-[100] mx-auto max-w-xl rounded-2xl border border-white/20 bg-[#14171C] p-5 text-white shadow-2xl sm:bottom-6 sm:p-6"
         >
           <div className="mb-3 flex items-center gap-2">
-            <span className="text-xl text-[#C6FF36]">✦</span>
+            <span className="text-xl text-[#C6FF36]">
+              ✦
+            </span>
+
             <h2 className="text-lg font-semibold">
               Ваша конфиденциальность
             </h2>
           </div>
 
           <p className="mb-5 text-sm leading-relaxed text-gray-300">
-            Мы используем Яндекс Метрику, чтобы понимать,
-            как посетители пользуются сайтом, и делать
-            его удобнее. Вы можете разрешить аналитику
+            Мы используем Яндекс Метрику, чтобы
+            понимать, как посетители пользуются
+            сайтом, и делать его удобнее.
+            Вы можете разрешить аналитику
             или отказаться от неё.
           </p>
 
@@ -74,17 +102,6 @@ export function CookieConsent() {
             </button>
           </div>
         </section>
-      )}
-
-      {!showBanner && (
-        <button
-          type="button"
-          onClick={() => setSettingsOpen(true)}
-          className="fixed bottom-3 left-3 z-[70] rounded-full border border-white/20 bg-[#14171C] px-3 py-2 text-xs text-white shadow-lg transition hover:bg-[#252A31]"
-          aria-label="Изменить настройки аналитики"
-        >
-          Настройки аналитики
-        </button>
       )}
     </>
   );
