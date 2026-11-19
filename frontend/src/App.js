@@ -14,6 +14,7 @@ import { Process } from "./components/site/Process";
 import { Contact } from "./components/site/Contact";
 import { Footer } from "./components/site/Footer";
 import { MobileCta } from "./components/site/MobileCta";
+import { CookieConsent } from "./components/site/CookieConsent";
 import { QuoteMarquee } from "./components/site/QuoteMarquee";
 import { Faq } from "./components/site/Faq";
 import { LemonBlock } from "./components/site/LemonBlock";
@@ -49,9 +50,10 @@ function App() {
         <Contact />
         <LemonBlock />
       </main>
-      <Footer />
+           <Footer />
       <MobileCta />
-        <Toaster theme="dark" position="bottom-center" />
+      <CookieConsent />
+      <Toaster theme="dark" position="bottom-center" />
     </div>
   );
 }
