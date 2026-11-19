@@ -30,10 +30,30 @@ export const Footer = () => (
           <li><a href={LINKS.phone} data-testid="footer-phone-link" className="nav-link text-zinc-200 inline-flex items-center gap-1"><Phone className="h-3.5 w-3.5" />{CONTACTS.phone}</a></li>
         </ul>
       </div>
-      <div className="mt-12 flex flex-col sm:flex-row justify-between gap-4 text-xs text-zinc-400">
-        <p>© {new Date().getFullYear()} София Рзаева. Фитнес-наставник.</p>
-        <p className="max-w-md sm:text-right">Информация на сайте носит ознакомительный характер и не является гарантией результата. Перед началом тренировок проконсультируйтесь с врачом.</p>
+    
+<div className="mt-12 flex flex-col sm:flex-row justify-between gap-4 text-xs text-zinc-400">
+  <div className="flex flex-col items-start gap-3">
+    <p>
+      © {new Date().getFullYear()} София Рзаева. Фитнес-наставник.
+    </p>
+
+    <button
+      type="button"
+      onClick={() =>
+        window.dispatchEvent(new Event("open-analytics-settings"))
+      }
+      className="text-zinc-400 underline underline-offset-4 hover:text-neon transition-colors"
+    >
+      Настройки аналитики
+    </button>
+  </div>
+
+  <p className="max-w-md sm:text-right">
+    Информация на сайте носит ознакомительный характер и
+    не является гарантией результата. Перед началом тренировок
+    проконсультируйтесь с врачом.
+  </p>
+</div>
       </div>
-    </div>
   </footer>
 );
